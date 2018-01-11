@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2048 - Tony Costa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <button id="restart" class="restart"><a href="/Users/TonyCoding/Rendu/JQuery_RUSH/index.html">NEW GAME</a></button>
+    <h2>2048</h2>
+<!--     <p id="highScore" class="score" name="highScore"></p>    -->     
+    <div id="score" class="score" name="score"></div>
+    </header>
+    <div class="Games">
+        <!-- le 2048 sera inséré ici -->
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="Base2048.js"></script>
+    <script type="text/javascript">
+        $(function()
+        {
+            $('.Games').game2048(); // appel de la fonction 'game2048' du plugin appliquée à la div de class 'Games'
+        });
+    </script>
+    <br>
+    <footer><strong>How to play:</strong> use your arrow keys to move the tiles.<br> When two tiles with the same number touch, they merge into one! The goal is to have a 2048 tile. Good luck!</footer>
+</body>
+</html>
